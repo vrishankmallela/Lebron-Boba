@@ -1,0 +1,82 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    height: 100vh; 
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://mediaproxy.snopes.com/width/1200/height/900/https://media.snopes.com/2024/09/lebron_maid.png'); 
+    background-position: center;
+    filter: blur(1px); 
+    z-index: -1; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    padding: 10px;
+}
+
+
+.title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white; 
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); 
+}
+
+
+.goats-list {
+    list-style-type: decimal;
+    font-size: 1.5em;
+    line-height: 2;
+    color: White; /* Set text color to black */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); 
+}
+
+
+#showGifButton {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+#showGifButton:hover {
+    background-color: #ffaa00;
+}
+
+
+.gif-container {
+    display: none; 
+    margin-top: 20px;
+}
+
+
+#lebronGif {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
