@@ -1,0 +1,43 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 GOATs of Basketball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Top 10 GOATs of Basketball</h1>
+        <ol class="goats-list">
+            <li>Michael Jordan</li>
+            <li>LeBron James</li>
+            <li>Kareem Abdul-Jabbar</li>
+            <li>Kobe Bryant</li>
+            <li>Magic Johnson</li>
+            <li>Bill Russell</li>
+            <li>Wilt Chamberlain</li>
+            <li>Shaquille O'Neal</li>
+            <li>Larry Bird</li>
+            <li>Tim Duncan</li>
+        </ol>
+        <!-- Button to show GIF -->
+        <button id="showGifButton">Click Me Daddy</button>
+        <!-- GIF container -->
+        <div id="gifContainer" class="gif-container">
+          
+            <img id="lebronGif" src="https://media.tenor.com/_z9QlkcVou4AAAAM/lebron-twerk.gif" alt="LeBron Twerking GIF" />
+        </div>
+    </div>
+
+    <script>
+        
+        const showGifButton = document.getElementById('showGifButton');
+        const gifContainer = document.getElementById('gifContainer');
+
+        showGifButton.addEventListener('click', () => {
+            gifContainer.style.display = gifContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
